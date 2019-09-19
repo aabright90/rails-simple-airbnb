@@ -1,0 +1,15 @@
+
+<form action="/flats" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="name">Name </label>
+  <input type="text" name="flat[name]" id="Name">
+  <label for="address">Address </label>
+  <input type="text" name="flat[address]" id="Address">
+  <label for="address">Description</label>
+  <input type="text" name="flat[description]" id="Description">
+  <label for="address">Number of Guests</label>
+  <input type="text" name="flat[number_of_guests]" id="Number of Guests">
+  <label for="address">Price Per Night</label>
+  <input type="text" name="flat[price_per_night]" id="Price Per Night">
+  <input type="submit">
+</form>
